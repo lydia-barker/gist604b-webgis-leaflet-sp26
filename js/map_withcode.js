@@ -32,9 +32,9 @@ L.control.scale().addTo(map);
 // Step 4: Create Layer Groups
 // ============================================
 
-const linelayer = L.layerGroup().addTo(map);
-const pointlayer = L.layerGroup().addTo(map);
-const polygonlayer = L.layerGroup().addTo(map);
+const lineLayer = L.layerGroup().addTo(map);
+const pointLayer = L.layerGroup().addTo(map);
+const polygonLayer = L.layerGroup().addTo(map);
 
 // UI control to toggle layers
 L.control.layers(null, {
