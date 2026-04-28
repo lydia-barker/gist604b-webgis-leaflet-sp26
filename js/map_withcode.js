@@ -65,7 +65,7 @@ fetch('data/Modern_Streetcar_Stops_-_Open_Data.geojson')
 
       // Add popups
       onEachFeature: function(feature, layer) {
-        const name = feature.STOP_NAME || 'Stop';
+        const name = feature.properties.STOP_NAME || 'Stop';
         layer.bindPopup(`<strong>${name}</strong>`);
       }
 
@@ -79,14 +79,14 @@ fetch('data/Modern_Streetcar_Stops_-_Open_Data.geojson')
 // Step 6: Load line data (Bicycle Boulevards)
 // ============================================
 
-fetch('/Users/lydiamayebarker/gist604b-webgis-leaflet-sp26/data/Bicycle_Boulevards.geojson')
+fetch('data/Bicycle_Boulevards.geojson')
   .then(res => res.json())
   .then(data => {L.geoJSON(data, {
 
       // Style lines
       style: function(feature) {
         return {
-          color: '#1b9e77',
+          color: '#226cf6',
           weight: 3
         };
       },
