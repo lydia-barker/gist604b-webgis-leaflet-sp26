@@ -65,7 +65,7 @@ fetch('data/Modern_Streetcar_Stops_-_Open_Data.geojson')
 
       // Add popups
       onEachFeature: function(feature, layer) {
-        const name = feature.stop_name || 'Stop';
+        const name = feature.STOP_NAME || 'Stop';
         layer.bindPopup(`<strong>${name}</strong>`);
       }
 
@@ -109,9 +109,9 @@ fetch('data/TPRD_PROPERTIES_OMS_AGOVW_-8278497986057194137.geojson')
       L.geoJSON(data, {
         style: function() {
           return {
-            color: '#7570b3',
+            color: '#1b5727',
             weight: 3,
-            fill: false
+            fill: true
           };
         }
       })
