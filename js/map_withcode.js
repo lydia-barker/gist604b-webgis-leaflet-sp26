@@ -79,7 +79,7 @@ fetch('data/Modern_Streetcar_Stops_-_Open_Data.geojson')
 // Step 6: Load line data (Bicycle Boulevards)
 // ============================================
 
-fetch('data/Bicycle_Boulevards.geojson')
+fetch('/Users/lydiamayebarker/gist604b-webgis-leaflet-sp26/data/Bicycle_Boulevards.geojson')
   .then(res => res.json())
   .then(data => {L.geoJSON(data, {
 
