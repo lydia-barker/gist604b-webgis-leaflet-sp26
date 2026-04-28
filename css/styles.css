@@ -1,0 +1,52 @@
+/* ================================
+   Global page styling (pastel theme)
+   ================================ */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f4fb; /* soft lavender background */
+  color: #4a4a4a; /* muted dark gray text */
+  font-family: system-ui, sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #6b5b95; /* pastel purple */
+  margin: 0;
+}
+
+/* Paragraphs */
+p {
+  color: #4a4a4a;
+}
+
+/* Header */
+#page-title {
+  height: 50px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #e6dff5; /* light pastel purple */
+}
+
+/* Footer */
+#page-footer {
+  height: 40px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  background-color: #dff5f0; /* light pastel teal */
+}
+
+/* ================================
+   Map layout
+   ================================ */
+
+#map {
+  width: 100%;
+  height: calc(100vh - 90px); /* 50 header + 40 footer */
+}
