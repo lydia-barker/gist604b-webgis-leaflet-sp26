@@ -21,7 +21,7 @@ This project is a WebGIS application built with HTML, CSS, JavaScript, and Leafl
 - Published the completed web map as a live site using GitHub Pages
 
 ## How to View / Run
-Live map: [Link to your GitHub Pages site here]
+Live map: https://lydia-barker.github.io/gist604b-webgis-leaflet-sp26/ 
 - Clone the repository and open it in VS Code
 - Open a terminal and run npm install to install dependencies
 - Run npm start to start the local development server
